@@ -7,6 +7,9 @@ import { NavBarComponent } from './layout/nav-bar/nav-bar.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { LayoutComponent } from './layout/layout.component';
 import { HomeComponent } from './home/home.component';
+import { MaBibliothequeComponent } from './ma-bibliotheque/ma-bibliotheque.component';
+import { CarteLivreComponent } from './ma-bibliotheque/carte-livre/carte-livre.component';
+import { BaniereComponent } from './ma-bibliotheque/baniere/baniere.component';
 
 
 @NgModule({
@@ -15,7 +18,10 @@ import { HomeComponent } from './home/home.component';
     NavBarComponent,
     FooterComponent,
     LayoutComponent,
-    HomeComponent
+    HomeComponent,
+    MaBibliothequeComponent,
+    CarteLivreComponent,
+    BaniereComponent
  
   ],
   imports: [
