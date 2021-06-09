@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { MaBibliothequeComponent } from './ma-bibliotheque/ma-bibliotheque.component';
 import { CarteLivreComponent } from './ma-bibliotheque/carte-livre/carte-livre.component';
 import { BaniereComponent } from './ma-bibliotheque/baniere/baniere.component';
+import { TemplateHeroComponent } from './template-hero/template-hero.component';
+import { FormHeroComponent } from './template-hero/form-hero/form-hero.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { BaniereComponent } from './ma-bibliotheque/baniere/baniere.component';
     HomeComponent,
     MaBibliothequeComponent,
     CarteLivreComponent,
-    BaniereComponent
+    BaniereComponent,
+    TemplateHeroComponent,
+    FormHeroComponent
  
   ],
   imports: [
