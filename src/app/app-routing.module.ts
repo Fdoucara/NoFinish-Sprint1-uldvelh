@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { LayoutComponent } from './layout/layout.component';
 import { MaBibliothequeComponent } from './ma-bibliotheque/ma-bibliotheque.component';
-import { PlayComponent } from './play/play.component';
+import { PlayChapterComponent } from './play-chapter/play-chapter.component';
 import { FormHeroComponent } from './template-hero/form-hero/form-hero.component';
 import { TemplateHeroComponent } from './template-hero/template-hero.component';
 
@@ -14,8 +14,7 @@ const routes: Routes = [
     { path: 'biblio', component: MaBibliothequeComponent},
     { path: 'templateHero', component: TemplateHeroComponent},
     { path: 'creatHero', component: FormHeroComponent},
-    { path: 'play', component: PlayComponent}
-
+    { path: 'playChapter', component: PlayChapterComponent},
   ]}
 ];
 
