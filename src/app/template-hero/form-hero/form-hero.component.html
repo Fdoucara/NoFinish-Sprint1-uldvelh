@@ -1,46 +1,32 @@
-<h2>Création de personnage</h2>
+<h2 style="text-decoration: underline;">Création de personnage</h2>
+<p>Répartir 10 points dans ton personnage </p>
+
+<div class="card-body">
+  <!-- Entrer un nom -->
+  <div class="form-outline container-sm">
+    <label class="form-label" style="float: left;" for="form1">Nom du personnage</label>
+    <input type="text" id="form1" class="form-control" />
+  </div>
+
+  <!-- Répartire 15 points dans les stats  -->
+  <div class="container-sm">
+    <label for="customRange2" class="form-label" style="float: left;">Force</label>
+    <input type="range" class="form-range" min="0" max="5" id="customRange2" />
+  </div>
+
+  <div class="container-sm">
+    <label for="customRange2" class="form-label" style="float: left;">Example range</label>
+    <input type="range" class="form-range" min="0" max="5" id="customRange2" />
+  </div>
+
+  <div class="container-sm">
+    <label for="customRange2" class="form-label" style="float: left;">Example range</label>
+    <input type="range" class="form-range" min="3" max="7" id="customRange2" />
+  </div>
 
 
-<div class="card-body" style="width: 25rem;">
-    <!-- Entrer un nom -->
-    <div class="form-outline">
-        <label class="form-label" for="form1">Nom du personnage</label>
-        <input type="text" id="form1" class="form-control" />
-      </div>
-      
-      <!-- Répartire 15 points dans les stats  -->
-      <label class="form-label" for="customRange2">Force</label>
-      <div class="range">
-        <input type="range" class="form-range" min="3" step="1" max="7" id="customRange1" />
-      </div>
-
-      <label class="form-label" for="customRange2">Agilité</label>
-      <div class="range">
-        <input type="range" class="form-range" min="3" step="1" max="7" id="customRange2" />
-      </div>
-
-      <label class="form-label" for="customRange2">Inteligence</label>
-      <div class="range">
-        <input type="range" class="form-range" min="3" step="1" max="7" id="customRange3"/>
-
-      </div>
-
-      <!-- valider personnage -->
-      <button type="button" style="width: 20rem;" class="btn btn-primary">Enregistrer le personnage</button>
+  <!-- valider personnage -->
+  <button [routerLink]="['/play']" type="button" style="width: 20rem;position: relative; bottom: 20px;" class="btn btn-primary">
+    Enregistrer le personnage
+  </button>
 </div>
-
-<input type="range" list="tickmarks">
-
-<datalist id="tickmarks">
-  <option value="0" label="0%">
-  <option value="10">
-  <option value="20">
-  <option value="30">
-  <option value="40">
-  <option value="50" label="50%">
-  <option value="60">
-  <option value="70">
-  <option value="80">
-  <option value="90">
-  <option value="100" label="100%">
-</datalist>

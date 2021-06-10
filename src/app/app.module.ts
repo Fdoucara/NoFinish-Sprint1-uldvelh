@@ -12,7 +12,6 @@ import { CarteLivreComponent } from './ma-bibliotheque/carte-livre/carte-livre.c
 import { BaniereComponent } from './ma-bibliotheque/baniere/baniere.component';
 import { TemplateHeroComponent } from './template-hero/template-hero.component';
 import { FormHeroComponent } from './template-hero/form-hero/form-hero.component';
-import { CardHeroComponent } from './template-hero/card-hero/card-hero.component';
 import { PlayComponent } from './play/play.component';
 import { PlayChapterComponent } from './play/play-chapter/play-chapter.component';
 import { PlayFightComponent } from './play/play-fight/play-fight.component';
@@ -30,11 +29,9 @@ import { PlayFightComponent } from './play/play-fight/play-fight.component';
     BaniereComponent,
     TemplateHeroComponent,
     FormHeroComponent,
-    CardHeroComponent,
     PlayComponent,
     PlayChapterComponent,
     PlayFightComponent
- 
   ],
   imports: [
     BrowserModule,
