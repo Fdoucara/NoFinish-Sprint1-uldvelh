@@ -16,6 +16,10 @@ import { PlayChapterComponent } from './play-chapter/play-chapter.component';
 import { HeroStatComponent } from './play-chapter/hero-stat/hero-stat.component';
 import { FoeStatComponent } from './play-chapter/foe-stat/foe-stat.component';
 import { HeroInvComponent } from './play-chapter/hero-inv/hero-inv.component';
+import { ChapterComponent } from './play-chapter/chapter/chapter.component';
+import { ChapterChoiceComponent } from './play-chapter/chapter-choice/chapter-choice.component';
+import { FightConsoleComponent } from './play-chapter/fight-console/fight-console.component';
+import { AfterFightChoiceComponent } from './play-chapter/after-fight-choice/after-fight-choice.component';
 
 
 @NgModule({
@@ -34,6 +38,10 @@ import { HeroInvComponent } from './play-chapter/hero-inv/hero-inv.component';
     HeroStatComponent,
     FoeStatComponent,
     HeroInvComponent,
+    ChapterComponent,
+    ChapterChoiceComponent,
+    FightConsoleComponent,
+    AfterFightChoiceComponent,
   ],
   imports: [
     BrowserModule,

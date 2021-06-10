@@ -1,27 +1,31 @@
-<div class="container">
+<div class="container-sm">
   <div class="row">
-    <div class="col-3 border">
-      <h3>Stat du héro</h3>
+    <div class="col-3 ">
       <app-hero-stat></app-hero-stat>
     </div>
     <div class="col-6 border">
-      <h3>text/combat</h3>
+      <!-- Chapitre Console de combat -->
+      <!-- <app-fight-console></app-fight-console> -->
+      <app-chapter></app-chapter>
     </div>
-    <div class="col-3 border">
-      Stat de l'ennemi
+    <div class="col-3 ">
+      <!-- Stat de l'ennemi -->
       <app-foe-stat></app-foe-stat>
     </div>
   </div>
   <div class="row">
-    <div class="col-sm border">
-      <h3>Inventaire du hero</h3>
+    <div class="col-sm ">
+      <!-- Inventaire du hero -->
       <app-hero-inv></app-hero-inv>
     </div>
-    <div class="col-sm border">
-      <h3>Choix/Console</h3>
+    <div class="col-sm ">
+      <!-- Choix Chapitre/ Choix Console -->
+      <!-- <app-after-fight-choice></app-after-fight-choice> -->
+      <app-chapter-choice></app-chapter-choice>
     </div>
-    <div class="col-sm border">
-      <h3>Retour ou livre</h3>
+    <div class="col gap-2 mx-auto mt-5 text-center">
+      <!-- Idk -->
+      <button type="button" class="btn btn-secondary">Sorti</button>
     </div>
   </div>
 </div>
