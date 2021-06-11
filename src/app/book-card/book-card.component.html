@@ -1,0 +1,13 @@
+<section class="row mt-5 ">
+    <section class="col-4" *ngFor="let bookCard of bookCards">
+        <div class="card mb-3" style="width: 18rem;">
+            <img src="../../assets/img/banniere-home.jpg" class="card-img-top" alt="{{bookCard.alt}}">
+            <div class="card-body">
+              <h5 class="card-title">{{bookCard.name}}</h5>
+              <p class="card-text">{{bookCard.description}}</p>
+              <a routerLink="/page-livres/{{bookCard.name}}" class="btn btn-success">Jouer !</a>
+            </div>
+        </div>
+    </section>
+</section>
+
