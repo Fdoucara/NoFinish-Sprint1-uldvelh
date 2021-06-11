@@ -1,0 +1,35 @@
+<h2 style="text-decoration: underline;">Création de personnage</h2>
+<div class="card-body">
+  <!-- Entrer un nom -->
+  <div class="form-outline container-sm">
+    <label class="form-label" style="float: left;" for="form1">Nom du personnage</label>
+    <input type="text" id="form1" class="form-control" />
+  </div>
+
+   <!-- Ajouet un image de profile a voitre hero -->
+   <div class="mb-3 container-sm">
+    <label for="formFile" style="float: left;" class="form-label">image du hero</label>
+    <input class="form-control" type="file" id="formFile">
+  </div>
+
+  <!-- Répartir 15 points dans les stats  -->
+  <div class="container-sm">
+    <label for="customRange2" class="form-label" style="float: left;">Force</label>
+    <input type="range" class="form-range" min="0" max="5" id="customRange2" />
+  </div>
+
+  <div class="container-sm">
+    <label for="customRange2" class="form-label" style="float: left;">Agiité</label>
+    <input type="range" class="form-range" min="0" max="5" id="customRange2" />
+  </div>
+
+  <div class="container-sm">
+    <label for="customRange2" class="form-label" style="float: left;">Inteligence</label>
+    <input type="range" class="form-range" min="3" max="7" id="customRange2" />
+  </div>
+
+  <!-- valider personnage -->
+  <button [routerLink]="['/playChapter']" type="button" style="width: 20rem; margin-top: 10px;" class="btn btn-primary">
+    Enregistrer le personnage
+  </button>
+</div>

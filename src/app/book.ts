@@ -1,0 +1,56 @@
+export interface Book {
+    id: string;
+    title: string;
+    genre: string;
+    description: string;
+    chapterNb: Number;
+    image: string;
+}
+
+export const books = [
+  {
+    id: '621cd56b-4d4e-4487-a0da-2b61a460eed8',
+    title: 'Winter War (Talvisota)',
+    author: 'bgallo0',
+    genre: 'Drama|War',
+    description: 'FB in intestine & colon',
+    chapterNb: 7446034165,
+    image: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAKrSURBVDjLfVNNTFNBEP5aqlItmlcoqG3EP4QQhFitxFNREwwnSbx50aiJBwkQD54gxsTgXQ+K4QoXogduRGPExCAaCCDRQhBCtaX8RKCl7et7u2+d3RZSjHGS6Uz3zTf7zc/aXtw+KvCXCDqx6EeplfMtAW7JMyirfFKHBFy71Yp/CqEFBQlOyixYpILznM/R09etEkRWl6Jed7EGPTaRA0pQDmByWAbpljUYCpzF2FNWKfNzmeDBXOhrb0nwCr6Pz4MT3Q9TCwhU+EAYGHRThgn8iMZQ5vbAMC00XQpgavKLLO2l/W7PfF94dno0PBuC70wD9OS6IpFKbSBJfjIZJz+eO9uEt+ocEmvLGAuNr1CCDnuWsWif+TYJt+aG3eVRwWlTIG1YSBlCqRRGFVeVlGJ6PqQwTwaWf9uEyH58eqO893Rd/XXnfg90XgCd6jVVtwnIs10vcjjAVhcwPDUyROAGiVNT6L5zzLXLYds7Mf6Jcy5szBL2/FHtGCfd6NztGNsalI32wE12tuTQcc3jrdg5RTnzvLlLNobJsBiexmp07vHDV4udksEIAbVS3ykszXwGN9LqJglkOfrmtgJFnnJohythMqujs/lgjUzgqaz1IzT8Fhnq+uSvOP4naxtJuNMMvhNnsRKda1Y92E9LFLjYCJ5Jo54xWiJTLQ43DbIspwb9l1tI32gb92kujBFThxoC1WfEw2B6EsPJ89gULnVbdfojCvU1vGEBbKZ02oMUHt3PMlx5n30zDtVZKtZZWgtOtvBnIS43XlXBo6NuRCIRXKirQzAYRGvLPcTeeVFgt22XZHt288g6jejA1otDcQ2qm9rg9/uhaZoKSiQSGBwcxNDr59AyIYi897u9SPnS1dXVput6C7E4KZmQHyMdME2zvb+/P50f+wdCqc9c4Pf4aQAAAABJRU5ErkJggg==',
+  },
+  {
+    id: '054ee9d2-874c-4f11-9289-c015a651db49',
+    title: 'Chapiteau-show ',
+    author: 'rwapplington1',
+    genre: 'Adventure|Comedy',
+    description: 'Paranoid personality',
+    chapterNb: 1811588654,
+    image: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJ7SURBVDjLpZNNbxJRFIb7A/wF/A5YunRDovEjalEXJm5M2Ji4aFoTI6kxjcVaCGOJYtq0NlBJ0AS0tcbWSkeQhhQopQwfAhYotAwIAwPDUI5zLh9SdedN3kzmznmfc86dc4cAYGhQZ2ZAJkkhSSlJ1ZWyuyf7M37QeEqSfOxNWW37uk+5fVF6Z3ePDQRD7KY3TL/eSFAj1qIaYzD2BKBrPm1xZjWBvTiTK5SB45sgHreJKjUBMvkiuLxBZnY1rsHYHqQHkKM5GP7O1Rsi4OKFFhS5JrCSqo0W2eN4ATY9fs60HEGInACwLywbM/fMR2UB9gt1yJUEomypAYk834esrruYO4s5bEeGAIWN/kFh2YNmldZ7wjw8uUX2cYUTB2Cwuin0IkDp2o7Q2DOWmjqqw6WHTgLIFBsQz/Fw7p6DAPBbuSbCYYmHuSUHjV4EqPw7uyweVv6nABfHP0vaIAbMfHbMLskBVx97yDtWIYjHsGheYtFLAL5AkAAKlSZcm/LDhQefCACBlx/RcP7+B7gy4SbVdKpowtz8qz5A+WUrRJe4BlR4EdKs1P8Tn9TCNiQPOwaEDU96IXZQI38mmi6BwWTut6Awr8WoVKYA7TYQA5Z5YzpAMqKw9OtP/RDJ1KDZasP6txBojO/7hyi7azlSrzk9DFvunDKaMDtmjGZrxIhPTBCTsuufLzC3jNHOb+wNkuFtQGP/6ORyxSoJLFVFUg2CcJgwczRdBJ3Jwo0aln8P0uAoa80ezYLVzrj9MUjlyuRMsOdQkoUVZwC0hllmRP/u71EevEy3XybV4y9WqKmZedrwzMhO6yl2QmeiR3U26iYV/vdl+p/r/AvMhAk86cw6LgAAAABJRU5ErkJggg==',
+  },
+  {
+    id: '40c3530f-da68-4dd4-8ab2-9763ff6f6b45',
+    title: "Isn't She Great?",
+    author: 'zferne2',
+    genre: 'Comedy',
+    description: 'Colon injury NOS-closed',
+    chapterNb: 4071837683,
+    image: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJtSURBVDjLhVPfS1NRHP/ce91wW9MZrjLLKCNxTEgcG9FLj0EgmbApPfQHBEHsL9B6CnrpRcQeQpIiWgwjlN42X3Kza7nKGEXRxFpMhVq7uz/OvZ1z5ubGpL7w5XO+536/n/M53/O9gmVZiEajd/x+/7jT6TwmSRIEQeDOvjEnhMAwDCiKUsjlco8mJiZuoGosYWpq6i3FHev/pk5PT29WiZm3MBKXy+WjIA1HH+NfNn93zG6z2brq9ziBKIocHQ4H2jwdLIZAXaTXqK5/ft/Ebi6aCJiUqkm7BUJdsSjsFVgQmgmYsUbdvubjqOs6b1oFdb5HfO08j7a2gUCsFrPuZzIZLCwswG63Y319HYlEgl+rN/0EPT9moJa2YZpmswJCKpvBYBCBQICfzNZMBdH/oDQo4ODxEfz+9gJmo4CKAoMYPJBlGfF4nCtYW1vD4uIiWhUZnq4Q2roGsf35JZwo7ENAT2QWCoUQDof5dZiCK5fOw8gn4O70gPyah7d/HEdbPiDz8KKtkcAgPFhZWUEsFuPdX12V8enVfXT2jQBlGanZORzwKGgnORhlbbiBQNO1moJIJMIJzvY6carbC3dHCab6hb6fCVJM4+SFKAxVvZW6d85da6KuaUZyaUmiKFTmgsCTn8Xp0GWYpWVaq2BotA+mtolWVxaHB8b6N5Yf3KSpk1xBsVj8mEwklVQqjXQ6jfy7OA71DMHpLsAytujjS3j9LEszTZjlLLxnToCo+vXkpN8n1E9h1ai8jYGrc92S+JUS7PD5q++75OhD/v0bZJ9PPm3Z76cxVK1VnhlVLProFh2cPbdqCIaWdeQvTLNXD529QmkAAAAASUVORK5CYII=',
+  },
+  {
+    id: 'd26e3eee-8424-46ff-b488-9edebc205207',
+    title: 'The Julian Assange Story',
+    author: 'mzecchii3',
+    genre: 'Drama',
+    description: 'Retrovert uter-postpart',
+    chapterNb: 2638799874,
+    image: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAALkSURBVDjLlZJrSJNRHMaFvtWXvvShT6ltb6Qz1EorZDZv5ZwNJ4UQQYJLnfZhmTJDtthUUpi2UcyELKI0l3My57zkEE2kmszyOi8jLyi75GVaXpr59L4vNBgV0oEH/ud/nud3zuGcAAAB/6OpVsI4pmN63z8O1lPz/QMG4ojNQISQwcM2A1Mxa4yEuy0B7Yog774AezvxhAzOT+gJD7nrz3nTWQxUB+0NKFnQlQS2/hNABpnTJmLLOXQb265u7Dg7sTYohquVg9GacBhkgbLf3r+F02d7zsM9XokfLhM81mtYeRcHpz4UjpZoODriYZIH2v4AkMGjpN4uWTKwMduI7YUX8Fi4WO3n4Kv5Atwdp+EynoKrOxmDVQyvDzBtJJhkcIm86557RArvmgXf7aVwD1yC08zGYls0ZurDsNDEgrOFPEXnZfSUBe/4ABM6Zrd7+Cp2HE+xOSfBpi0TWyMCuHo5mNZGYPxZKD5rCMw2nKCvsWRKQsu9wHkfYPg5Y3Hdnot1uxwfX7LwSRuCscYozJBydkTBomLA+vA4FuoZcHclYq4pBo13jzX5AB8eBddOGWOwMlmC0WY+9NJz0NxPR0WZFHV1dahQFKC7MgLDNQQqSwvpXnmZYkMkEhWy2exDNKWvKmhgqCESy5MSFN9kQ6VSweFwwG63o7e3F9UPCqFWCDFpG6N7/f39tIfH41X6XqGrPGiyVhoBSZEY1pERlEmzkMpLgVAohFqtRnFxMV3zUrjIyMgwUZCCgoI1vz+QeSV0qlQuowFvilhIjI+F2WyG1WpFX18fdDod4jnsPT6ff5ACyOXyLT9AWFhYbk72rQ0KcEeYjIQEDpKSkpCWlkaLquPiLu4JBIJOCpCdnb3qBzhJjtTU1AmlUrmqff1qs7m5GRqNBmKxGBKJhK6pnlarXaY8lNcPQBDEgdjY2HAul/slKyvrW15e3lZ+nmhXduOMR36d5ckX5eySvW1qjfJQ3l9oR6i5wBWqZAAAAABJRU5ErkJggg==',
+  },
+  {
+    id: '8823cca6-ea0c-4585-98dc-ff053f86e7b8',
+    title: 'Kid for Two Farthings, A',
+    author: 'jeydel4',
+    genre: 'Children|Comedy|Drama|Fantasy',
+    description: 'Depersonalization disord',
+    chapterNb: 7361169910,
+    image: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJoSURBVDjLhZJZTxNhFIbnRq/9E/4Rf4JRE+PChV4YYjQxLglRQkgDWhGXRo2VNJWu0IWh0hY6iEvpjl1AWuoImqFCO6V0uqRrzOt8H0mxBvQkTyYnOfOcd775mPn5+WMcx12dm5v74Ha7806ns+JwOOIsyyptNttxAMy/YDwejz6ZTKJQKKDZbKLdbkOSJKTTaVgslrX/CmZnZwu1Wg3VarUjID3BbDZD5d7GE+cWRhwZ3J8SoLD+wMDEOu4ZvqFP9zXMuFyuXLlcphszmQwEQUAwGESpVILBYEC13j6Um9pUg5mZmck2Gg3wPI9isYh4PE4hNT4+DlXkIUZDw3jgH4TC24+Bj324u3CbCq6//gJmenqaClZXV6kgEolQSGk0GhxWRND7MgHGbrdTQSKRwM7ODnw+H/x+Px1Sq9UwenMHQgSXVVEwVqtVarVaSKVS9PvD4TBisRgVqFSqzkZrINuVIF+qo+dxBMyEXCSyKIr095EDJUmI6OlzNeyhHFgZIiBPNpiFcymLje0yziqDYIxG41GdTtc7pp/CpMWCMa0eJpMJYyYXKpXKoQn4nyWcHvLvXQatVntEaV0Dv7GJCW4Ztk882MAm3i6JFHdUpAKaQk5gl1kTJJwaWty/UYOT31GsNOkwKS6e79roiYko19qdngh6HgX3Bf3mdSrwyC9yf/EukYfzs9gFEZxX+vcFffo0dmXBwvLe5vcr3QlsAbGrpwlG/hDcepNCodyAKNWxVahBEKvySVfAZ0p0+CAuKH2/OoIbmuTitVcr1SsvErj0LIqLoxGcU4ZwZjiAkwrvgZy4w7G/AXhUV4qmXai6AAAAAElFTkSuQmCC',
+  },
+];
