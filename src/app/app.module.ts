@@ -20,6 +20,12 @@ import { ChapterComponent } from './play-chapter/chapter/chapter.component';
 import { ChapterChoiceComponent } from './play-chapter/chapter-choice/chapter-choice.component';
 import { FightConsoleComponent } from './play-chapter/fight-console/fight-console.component';
 import { AfterFightChoiceComponent } from './play-chapter/after-fight-choice/after-fight-choice.component';
+import { MyCreationComponent } from './my-creation/my-creation.component';
+import { CreationCardComponent } from './my-creation/creation-card/creation-card.component';
+import { AuthorHeroTemplateComponent } from './my-creation/author-hero-template/author-hero-template.component';
+import { AuthorChapterComponent } from './my-creation/author-chapter/author-chapter.component';
+import { BookFormComponent } from './my-creation/book-form/book-form.component';
+import { EditTextChapterComponent } from './my-creation/edit-text-chapter/edit-text-chapter.component';
 
 
 @NgModule({
@@ -42,6 +48,12 @@ import { AfterFightChoiceComponent } from './play-chapter/after-fight-choice/aft
     ChapterChoiceComponent,
     FightConsoleComponent,
     AfterFightChoiceComponent,
+    MyCreationComponent,
+    CreationCardComponent,
+    AuthorHeroTemplateComponent,
+    AuthorChapterComponent,
+    BookFormComponent,
+    EditTextChapterComponent
   ],
   imports: [
     BrowserModule,

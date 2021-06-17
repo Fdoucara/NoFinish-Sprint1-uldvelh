@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StatusService } from '../service/status.service';
 
 @Component({
   selector: 'app-play-chapter',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlayChapterComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(
+    editorStatus : StatusService
+    ) { }
 
   ngOnInit(): void {
   }

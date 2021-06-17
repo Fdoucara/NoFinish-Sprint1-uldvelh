@@ -1,0 +1,79 @@
+<div class="container">
+  <div class="row">
+    <div class="col-9"><h2>Hero template</h2></div>
+    <div class="col-4">
+      <h3>Autorisation</h3>
+      <div class="form-check form-switch">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          id="flexSwitchCheckDefault"
+        />
+        <label class="form-check-label" for="flexSwitchCheckDefault"
+          >Autoriser le nommage du personnage</label
+        >
+      </div>
+      <div class="form-check form-switch">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          id="flexSwitchCheckDefault"
+        />
+        <label class="form-check-label" for="flexSwitchCheckDefault"
+          >Autoriser l'ajout d'image au personnage</label
+        >
+      </div>
+
+      <div class="form-check form-switch">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          id="flexSwitchCheckDefault"
+        />
+        <label class="form-check-label" for="flexSwitchCheckDefault"
+          >Autoriser la modification des statistique du personnage</label
+        >
+
+        <hr>
+
+        <div class="form-outline">
+          <label class="form-label" style="float: left" for="form1"
+            >Valeur max</label
+          >
+          <input type="text" id="form1" class="form-control" />
+        </div>
+
+        <div class="form-outline">
+          <label class="form-label" style="float: left" for="form1"
+            >Valeur min</label
+          >
+          <input type="text" id="form1" class="form-control" />
+        </div>
+
+        <div class="form-outline">
+          <label class="form-label" style="float: left" for="form1"
+            >Points accodrer</label
+          >
+          <input type="text" id="form1" class="form-control" />
+        </div>
+
+        <hr>
+ 
+        <div class="col-6 text-center">
+          <button
+            [routerLink]="['/editTextChapter']"
+            type="button"
+            class="btn btn-success"
+          >
+            Enregistrer le template
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <h3>Vue du Template de création de personnage</h3>
+      <!-- le bouton Enregistrer personnage si on est en mod editeur -->
+      <app-template-hero></app-template-hero>
+    </div>
+  </div>
+</div>
