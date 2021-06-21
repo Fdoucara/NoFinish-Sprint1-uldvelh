@@ -22,7 +22,7 @@ const routes: Routes = [
     { path: 'crea', component: MyCreationComponent},
     { path: 'bookForm', component: BookFormComponent},
     { path: 'authorHeroForm', component: AuthorHeroTemplateComponent},
-    { path: ' editTextChapter', component: EditTextChapterComponent}
+    { path: 'editTextChapter', component: EditTextChapterComponent}
   ]}
 ];
 
