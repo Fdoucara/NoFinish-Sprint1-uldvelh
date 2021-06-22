@@ -1,0 +1,52 @@
+.banner{
+    // border: 1px solid rgb(27, 22, 22);
+    border-radius: calc(.25rem - 1px) ;
+    height: 175px;
+    // background: center no-repeat content-box url('../../../assets/img/banniere-home.jpg') ;
+   
+
+    &__avatar{ 
+        background: center no-repeat content-box url('../../../assets/img/avatar.jfif');
+        border-radius: 50%;
+        margin: 0;
+    }
+
+    // &__image{
+    //     border-radius: inherit;
+    //     margin: 0;
+    //     padding: 0;
+    // }
+    
+    &__text{
+        position: relative;
+        margin-left: 20px;
+    }
+
+    &__title{
+        border-radius: inherit;
+        color: white;
+        width: fit-content;
+        margin-top: 10px ;
+        position: absolute;
+        left: 10px;
+        background-color: rgb(177, 177, 177);
+        border: 1px solid white;
+        border-radius:  calc(.25rem - 1px);
+        padding: 5px;
+
+        &--username{
+            top: 10px;
+        }
+
+        &--role{
+            top: 60px;
+        }
+        
+    }
+}
+hr{
+    width: 70%;
+    text-align: center;
+}
+
+

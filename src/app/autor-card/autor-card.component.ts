@@ -1,15 +1,14 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
-
 @Component({
-  selector: 'app-book-card',
-  templateUrl: './book-card.component.html',
-  styleUrls: ['./book-card.component.scss']
+  selector: 'app-autor-card',
+  templateUrl: './autor-card.component.html',
+  styleUrls: ['./autor-card.component.scss']
 })
-export class BookCardComponent implements OnInit {
+export class AutorCardComponent implements OnInit {
 
-  @Input() bookCards: any;
+  @Input() autorCards: any;
 
   closeResult: string = '';
   

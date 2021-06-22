@@ -3,12 +3,11 @@ import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 
 @Component({
-  selector: 'app-book-card',
-  templateUrl: './book-card.component.html',
-  styleUrls: ['./book-card.component.scss']
+  selector: 'app-carte-livre',
+  templateUrl: './carte-livre.component.html',
+  styleUrls: ['./carte-livre.component.scss']
 })
-export class BookCardComponent implements OnInit {
-
+export class CarteLivreComponent implements OnInit {
   @Input() bookCards: any;
 
   closeResult: string = '';
@@ -32,7 +31,6 @@ export class BookCardComponent implements OnInit {
       return  `with: ${reason}`;
     }
   }
-
   ngOnInit(): void {
   }
 

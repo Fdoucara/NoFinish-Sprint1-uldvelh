@@ -1,0 +1,34 @@
+<section class="row mt-5 ">
+    <section class="col-6" *ngFor="let autorCard of autorCards">
+        <div class="card mb-3" style="max-width: 540px;" (click)="open(mymodal)">
+            <div class="row">
+              <div class="col-md-4">
+                <img class="img-thumbnail" src="../../assets/img/banniere-home.jpg" alt="{{autorCard.alt}}">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">{{autorCard.name}}</h5>
+                  <p class="card-text">{{autorCard.description}}</p>
+                  <a routerLink="/page-auteurs/{{autorCard.name}}" class="btn btn-success">Jouer !</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <!-- ********* MODAL *************** -->
+        <ng-template #mymodal let-modal>
+            <div class="modal-header">
+              <h4 class="modal-title" id="modal-basic-title">{{autorCard.name}}</h4>
+              <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              {{autorCard.description}}
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" (click)="modal.close('Save click')">Jouer</button>
+            </div>
+          </ng-template>
+    </section>    
+</section>

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PageDetailComponent } from './page-detail.component';
+import { HeroInvComponent } from './hero-inv.component';
 
-describe('PageDetailComponent', () => {
-  let component: PageDetailComponent;
-  let fixture: ComponentFixture<PageDetailComponent>;
+describe('HeroInvComponent', () => {
+  let component: HeroInvComponent;
+  let fixture: ComponentFixture<HeroInvComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PageDetailComponent ]
+      declarations: [ HeroInvComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PageDetailComponent);
+    fixture = TestBed.createComponent(HeroInvComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
