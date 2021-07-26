@@ -1,16 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-
 @Component({
-  selector: 'app-ma-bibliotheque',
-  templateUrl: './ma-bibliotheque.component.html',
-  styleUrls: ['./ma-bibliotheque.component.scss']
+  selector: 'app-page-livres',
+  templateUrl: './page-livres.component.html',
+  styleUrls: ['./page-livres.component.scss']
 })
-export class MaBibliothequeComponent implements OnInit {
+export class PageLivresComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) { }
-  
+
   bookCards = [
     {src:'../../assets/img/banniere-home.jpg', alt:'image 1', name:'livre 1', description:'blhazoudvouazd'},
     {src:'../../assets/img/banniere-home.jpg', alt:'image 2',name:'livre 2', description:'blhazoudvouazd'},
@@ -20,9 +19,10 @@ export class MaBibliothequeComponent implements OnInit {
     {src: '../../assets/img/banniere-home.jpg', alt:'image 6',name:'livre 6', description:'blhazoudvouazd'}
   ]
 
-
   ngOnInit(): void {
     const routeParams = this.route.snapshot.paramMap;
+
+    // this.title = routeParams.get('categoryName');
   }
 
 }

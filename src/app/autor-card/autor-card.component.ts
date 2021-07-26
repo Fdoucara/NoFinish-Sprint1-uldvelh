@@ -1,14 +1,14 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
-
 @Component({
-  selector: 'app-carte-livre',
-  templateUrl: './carte-livre.component.html',
-  styleUrls: ['./carte-livre.component.scss']
+  selector: 'app-autor-card',
+  templateUrl: './autor-card.component.html',
+  styleUrls: ['./autor-card.component.scss']
 })
-export class CarteLivreComponent implements OnInit {
-  @Input() bookCards: any;
+export class AutorCardComponent implements OnInit {
+
+  @Input() autorCards: any;
 
   closeResult: string = '';
   
@@ -31,6 +31,7 @@ export class CarteLivreComponent implements OnInit {
       return  `with: ${reason}`;
     }
   }
+
   ngOnInit(): void {
   }
 

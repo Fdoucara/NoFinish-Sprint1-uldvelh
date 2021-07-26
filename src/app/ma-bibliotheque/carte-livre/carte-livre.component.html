@@ -1,14 +1,33 @@
-<section class="row mt-5">
-  <section class="col-4">
-    <div *ngIf="book" class="card mb-3" style="width: 18rem">
-      <img src="{{ book.image }}" class="card-img-top" alt="..." />
-      <div class="card-body">
-        <h5 class="card-title">{{ book.title }}</h5>
-        <p class="card-text">{{ book.description }}</p>
-        <a href="#" class="btn btn-success" [routerLink]="['/templateHero']"
-          >Jouer</a
-        >
+<section class="row mt-5 ">
+  <section class="col-4" *ngFor="let bookCard of bookCards">
+      <div class="card mb-3" style="width: 18rem;" (click)="open(mymodal)">
+          <img src="../../assets/img/banniere-home.jpg" class="card-img-top" alt="{{bookCard.alt}}">
+          <div class="card-body">
+            <h5 class="card-title">{{bookCard.name}}</h5>
+            <p class="card-text">{{bookCard.description}}</p>
+            <a routerLink="/page-livres/{{bookCard.name}}" class="btn btn-success">Jouer !</a>
+          </div>
       </div>
-    </div>
+
+      <!-- ********* MODAL *************** -->
+      <ng-template #mymodal let-modal>
+          <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">{{bookCard.name}}</h4>
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            {{bookCard.description}}
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" (click)="modal.close('Save click')">Jouer</button>
+          </div>
+        </ng-template>
   </section>
 </section>
+
+
+
+
+
