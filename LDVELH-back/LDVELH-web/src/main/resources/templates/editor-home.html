@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="Http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Simplon LDVELH</title>
+</head>
+<body>
+<!--<div th:text="${ #locale.country }"></div>-->
+<h1>Bienvenue sur Simplon LDVELH</h1>
+<h2>
+    <a href="create-form">LDVELH: Le livre dont vous êtes le héro</a>
+</h2>
+
+<table>
+    <tr th:each="book: ${BookList}">
+        <td>
+            <a th:href="@{editor/{title}(title=${book.title})}" th:text="${book.title}"></a>
+        </td>
+        <td>
+            <ul>
+                <li th:text="${book.types}"></li>
+            </ul>
+
+        </td>
+    </tr>
+</table>
+</body>
+</html>

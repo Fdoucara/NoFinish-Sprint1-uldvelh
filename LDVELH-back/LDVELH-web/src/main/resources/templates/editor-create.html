@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="Http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Création d'un nouveau livre</title>
+</head>
+<body>
+<form th:action="@{/editor}" th:object="${bookToFill}" method="post">
+  <p>
+    Title: <input type="text"th:field="*{title}" >
+    <div th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></div>
+  </p>
+  <p>Types: </p>
+  <select th:field="*{types}" name="Types" multiple="">
+    <option th:each="type: ${T(com.arcreane.ldvelh.core.model.Tags).values()}"
+            th:value="${type}" th:text="${type}"
+            th:selected="${Types != null AND #arrays.contains(Types, type)}"></option>
+  </select>
+  <div th:if="${#fields.hasErrors('types')}" th:errors="*{types}"></div>
+  <input type="submit" value="ok">
+</form>
+
+</body>
+</html>

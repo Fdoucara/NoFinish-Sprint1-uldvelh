@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="Http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Book</title>
+    <link th:href="@{/css/style.css}" rel="stylesheet">
+
+</head>
+<body>
+<h1>Bienvenue sur Simplon LDVELH</h1>
+<p>
+<h2>
+    <a href="create-form">Création d'un livre </a>
+</h2>
+<section class="container">
+    <div class="left-half">
+        <article id="book-list">
+
+        </article>
+    </div>
+    <div class="right-half">
+        <article id="book-detail">
+
+        </article>
+    </div>
+</section>
+
+</body>
+
+<script th:src="@{/js/api.js}"></script>
+</html>
